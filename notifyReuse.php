@@ -38,7 +38,7 @@ function umw_report_a_problem() {
 }
 
 function get_umw_report_a_problem( $content='' ) {
-	if ( ! is_page() || ! is_main_query() )
+	if ( ! is_singular() || ! is_main_query() )
 		return $content;
 	
 	$weburl = get_blog_option( 3981, 'siteurl', '/' );
